@@ -42,11 +42,11 @@ export default class Conversor extends Component {
     }
     render() {
         return (
-            <div className="section" id="conversor">
+            <div className="section scrollspy" id="conversor">
                 <h2>Conversor</h2>
-                <div className="row" data-aos="fade-left">
+                <div className="row">
                     <div className="col s12">
-                        <div className="card">
+                        <div className="card" data-aos="fade-left">
                             <div className="card-content">
                                 <span className="card-title">De ARS a USD</span>
                                 <form className="form">

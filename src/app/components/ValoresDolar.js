@@ -109,7 +109,7 @@ export default class ValoresDolar extends Component {
     }
     render() {
         return (
-            <div className="section" id="valores">
+            <div className="section scrollspy" id="valores">
                     <h2>Valores del Dolar</h2>
 
 

@@ -11,7 +11,7 @@ export default class App extends Component{
         return(
             <div>
                 <Nav/>
-                <div className="container">
+                <div className="container white z-depth-4">
                     <div className="row">
                         <div className="col m12 l8">
                             <ValoresDolar/>

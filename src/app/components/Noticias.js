@@ -24,7 +24,7 @@ export default class Noticias extends Component {
     }
     render() {
         return (
-            <div className="section">
+            <div className="section scrollspy" id="noticias">
                 <h2>Noticias</h2>
                 <div className="row">
 
@@ -45,12 +45,12 @@ export default class Noticias extends Component {
                     {this.state.noticiasLoad==="Done"&&
                     this.state.noticias.map(noticia => {
                         return(
-                            <div className="col s12 m4">
+                            <div className="col s12 m4" data-aos="fade-right">
                                 <div className="card">
                                     <div className="card-image">
                                         <img src={noticia.imageUrl} />
                                         <span className="card-title titulo-noticia">{noticia.title}</span>
-                                        <a href={noticia.sourceUrl} className="btn-floating halfway-fab waves-effect waves-light red"><i className="fa fa-chevron-right"></i></a>
+                                        <a href={noticia.sourceUrl} className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">chevron_right</i></a>
                                     </div>
                                     <div className="card-content">
                                         <p>{noticia.description}</p>

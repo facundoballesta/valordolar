@@ -21,3 +21,17 @@
     font-weight: bolder!important;
     text-shadow: 3px 3px 5px black;
 }
+.sidenav{
+    z-index: 999999;
+}
+body{
+    background-attachment: fixed;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+    overflow-x: hidden;
+}
