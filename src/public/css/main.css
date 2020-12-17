@@ -1,0 +1,18 @@
+.titulo-dolar{
+    font-size: 1em;
+}
+.valor-dolar{
+    font-weight: bold;
+}
+.card-title{
+    font-size: 1.2em!important;
+}
+.variacion{
+    font-size: 0.5em;
+}
+
+@media only screen and (min-width: 601px){
+    .container {
+        width: 85%!important;
+    }
+}
