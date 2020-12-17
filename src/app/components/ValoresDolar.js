@@ -135,11 +135,11 @@ export default class ValoresDolar extends Component {
                                     <div className="card-content">
                                         <span className="card-title">Dolar Oficial <span className="variacion">{this.state.dolaroficial.variacion}</span></span>
                                         <div className="row">
-                                            <div className="col 6">
+                                            <div className="col s6">
                                                 <h4 className="titulo-dolar">Compra</h4>
                                                 <p className="valor-dolar">{this.state.dolaroficial.compra}</p>
                                             </div>
-                                            <div className="col 6">
+                                            <div className="col s6">
                                                 <h4 className="titulo-dolar">Venta</h4>
                                                 <p className="valor-dolar">{this.state.dolaroficial.venta}</p>
                                             </div>
