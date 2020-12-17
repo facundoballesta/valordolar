@@ -128,18 +128,18 @@ export default class ValoresDolar extends Component {
                     }
 
                     {this.state.valoresLoad === "Done" &&
-                        <div className="row">
+                        <div className="row" data-aos="fade-right">
                             {/* //Dolar Oficial */}
                             <div className="col s12 m6 l4">
                                 <div className="card green darken-4 white-text center-align">
                                     <div className="card-content">
                                         <span className="card-title">Dolar Oficial <span className="variacion">{this.state.dolaroficial.variacion}</span></span>
                                         <div className="row">
-                                            <div className="col s6">
+                                            <div className="col 6">
                                                 <h4 className="titulo-dolar">Compra</h4>
                                                 <p className="valor-dolar">{this.state.dolaroficial.compra}</p>
                                             </div>
-                                            <div className="col s6">
+                                            <div className="col 6">
                                                 <h4 className="titulo-dolar">Venta</h4>
                                                 <p className="valor-dolar">{this.state.dolaroficial.venta}</p>
                                             </div>

@@ -4,7 +4,6 @@ export default class Nav extends Component {
     render() {
         return (
             <div>
-
                 <nav className="blue darken-4 white-text">
                     <div className="container">
                         <div className="nav-wrapper">

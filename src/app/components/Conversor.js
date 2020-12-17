@@ -44,7 +44,7 @@ export default class Conversor extends Component {
         return (
             <div className="section" id="conversor">
                 <h2>Conversor</h2>
-                <div className="row">
+                <div className="row" data-aos="fade-left">
                     <div className="col s12">
                         <div className="card">
                             <div className="card-content">

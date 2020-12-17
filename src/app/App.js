@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import Nav from './components/Nav';
 import ValoresDolar from './components/ValoresDolar';
 import Conversor from './components/Conversor';
+import Noticias from './components/Noticias';
 
 export default class App extends Component{
     render(){
@@ -17,6 +18,11 @@ export default class App extends Component{
                         </div>
                         <div className="col m12 l4">
                             <Conversor/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12">
+                            <Noticias/>
                         </div>
                     </div>
                 </div>
