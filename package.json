@@ -1,7 +1,7 @@
 {
-  "name": "apis",
+  "name": "dolar-a-pesos",
   "version": "1.0.0",
-  "description": "Test Apis",
+  "description": "App con los valores del dolar expresados en pesos, coversor de monera y noticias",
   "main": "index.js",
   "scripts": {
     "start": "node src",

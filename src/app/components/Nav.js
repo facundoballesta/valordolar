@@ -8,7 +8,7 @@ export default class Nav extends Component {
                     <nav className="blue darken-4 white-text">
                         <div className="container">
                             <div className="nav-wrapper">
-                                <a href="#!" className="brand-logo">Dolar App</a>
+                                <a href="#!" className="brand-logo">Dolar a Pesos</a>
                                 <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                                 <ul className="right hide-on-med-and-down">
                                     <li><a href="#valores">Valores</a></li>
