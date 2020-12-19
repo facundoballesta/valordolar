@@ -53,7 +53,7 @@ export default class Noticias extends Component {
                                         <a href={noticia.sourceUrl} className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">chevron_right</i></a>
                                     </div>
                                     <div className="card-content">
-                                        <p>{noticia.description}</p>
+                                        <p>{noticia.description.substr(0, 250)}...</p>
                                     </div>
                                 </div>
                             </div>
