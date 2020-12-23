@@ -10,11 +10,11 @@ export default class Noticias extends Component {
         this.fetchNoticias = this.fetchNoticias.bind(this);
     }
     fetchNoticias() {
-        fetch('https://api.jornalia.net/api/v1/articles?apiKey=2999c4958d2f43f3bb385a98026dc4c3&search=d%C3%B3lar')
+        fetch('http://api.mediastack.com/v1/news?access_key=431b5873489eaeb2a3b7014c34c4df19&categories=business')
             .then(res => res.json())
             .then(data => {
                 this.setState({
-                    noticias: data.articles.slice(0, 3),
+                    noticias: data.data.slice(0, 3),
                     noticiasLoad: "Done"
                 })
             })
@@ -48,9 +48,15 @@ export default class Noticias extends Component {
                             <div className="col s12 m4" data-aos="fade-right">
                                 <div className="card">
                                     <div className="card-image">
-                                        <img src={noticia.imageUrl} />
+                                        
+                                        {noticia.image===null&&
+                                            <img src="img/noimg.jpg" alt=""/>
+                                        }
+                                        {noticia.image!=null&&
+                                            <img src={noticia.image}/>
+                                        }
                                         <span className="card-title titulo-noticia">{noticia.title}</span>
-                                        <a href={noticia.sourceUrl} className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">chevron_right</i></a>
+                                        <a href={noticia.url} className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">chevron_right</i></a>
                                     </div>
                                     <div className="card-content">
                                         <p>{noticia.description.substr(0, 250)}...</p>
