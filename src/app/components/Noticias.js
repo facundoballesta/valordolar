@@ -10,7 +10,7 @@ export default class Noticias extends Component {
         this.fetchNoticias = this.fetchNoticias.bind(this);
     }
     fetchNoticias() {
-        fetch('http://api.mediastack.com/v1/news?access_key=431b5873489eaeb2a3b7014c34c4df19&categories=business')
+        fetch('https://api.mediastack.com/v1/news?access_key=431b5873489eaeb2a3b7014c34c4df19&categories=business')
             .then(res => res.json())
             .then(data => {
                 this.setState({
